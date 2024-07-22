@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Level 3A Medical Centre, Cardiology Clinic, Laboratory, Pharmacy, Medical Clinic in Nairobi'>
+    <link rel="icon" type="image/png" href="IconOnly_Transparent_NoBuffer.png">
+    <title>The Heart Nebula Healthcare</title>
+
+    <link rel="stylesheet"  href="styles.css">
+    <script src="https://kit.fontawesome.com/6d55c8f183.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#contact_form" class="button top-right-button">Book Appointment</a>
+            </nav>
+            <img src="FullLogo_NoBuffer.png" alt="logo" class="logo">
+        </div>
+    </div>
+    
+
+        <div id="body">
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IconOnly_Transparent_NoBuffer.png" alt="logo2" class="logo2">
+            
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <br></br>
+                <p>The Heart Nebula Healthcare is a <strong>Level 3A medical centre </strong> located in Upperhill Nairobi in the Fortis Suites buliding. It offers evidence based cardiac care solutions. The comprehensive clinic offers consultation services, a modern level 5 laboratory as well as a well stocked pharmacy</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('contacts')">Contact/Location</p>
+                        <p class="tab-links" onclick="opentab('location')">Facilities</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="contacts">
+                        <ul>
+                            <li><span>Office Mobile</span><br>0713 863 705</li>
+                            <li><span>Email</span><br> drmurageclinic@gmail.com</li>
+                            <li><span>Location</span><br>Room 605 & 609</li>
+                            <li><span></span>6th Floor Fortis Suites</li>
+                            <li><span></span>Upperhill Nairobi , along hospital road</li>
+
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="location">
+                        <ul>
+                            <li><span>Clinic</span><br>Level 3 medical centre</li>
+                            <li><span></span>Cardiology clinic</li>
+                            <li><span></span>Room 605</li>
+                            <li><span>Lab</span><br>Level 5 Laboratory</li>
+                            <li><span></span>Room 609</li>
+                            <li><span>Pharmacy</span><br>Well stocked pharmacy</li>
+                            <li><span></span>Room 609</li>
+                        </ul>
+                    </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------services------------->
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">Services</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-suitcase-medical"></i>
+                <h2>Consultation</h2>
+                <p>Specialist consultation in <strong>Internal Medicine</strong> and <strong>Cardiology</strong> with our specialist, Dr. Martin M. Murage.</p>
+                <a href="#contact_form">Book an apointment</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-stethoscope"></i>
+                <h2>Cardiology</h2>
+                <p> ECG, Echo, 24Hr holter monitoring, ambulatory BP monitoring, Exercise stress test, among others...</p>
+                <a href="#contact_form">Book an apointment</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-receipt"></i>
+                <h2>Pharmacy</h2>
+                <p>Well stocked pharmacy with competitive pricing</p>
+                <a href="#contact_form">Book an apointment</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-vial-virus"></i>
+                <h2>Laboratory</h2>
+                <p>Hematology, Immunology, Biochemistry, Microbiology</p>
+                <a href="#contact_form">Book an apointment</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------contact-form----------->
+<div id="contact_form">
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <div class="contact-form-title">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="24794873-af8e-42e6-868a-498d476f82b2">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs required">
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs required">
+            <input type="number" name="mobile" placeholder="Your Phone Number" class="contact-inputs required">
+            <label for="datePicker" class="date-picker-label">Book an appointment date:</label>
+            <input type="date" id="datePicker" name="date(yyyy/mm/dd)" placeholder="Appointment date" class="contact-inputs required">
+            <textarea name="Message" rows="6" placeholder="Your Message" class="contact-textarea"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
